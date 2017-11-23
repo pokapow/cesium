@@ -171,7 +171,7 @@ function CurrencyViewController($scope, $q, $timeout, $ionicPopover, Modals, BMA
             data.dtReeval = data.dt;
           }
         }),
-
+//toto
       // Get the current block informations
       BMA.blockchain.current()
         .then(function(block){
