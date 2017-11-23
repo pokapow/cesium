@@ -245,7 +245,9 @@
       "MATH_CEILING": "PLAFOND",
       "DISPLAY_ALL_RULES": "Afficher toutes les règles ?",
       "BTN_SHOW_LICENSE": "Voir la licence",
-      "WOT_DIVIDER": "Toile de confiance"
+      "WOT_DIVIDER": "Toile de confiance",
+      "SIG_WINDOW": "Maximum delay a certification can wait<br/>before being expired for non-writing.",
+    "STEP_MAX": "Distance maximale dans la toile de confiance<br/>entre chaque membre et un nouvel entrant"
     },
     "LICENSE": {
       "TITLE": "Licence de la monnaie",

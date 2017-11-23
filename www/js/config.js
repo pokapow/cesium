@@ -10,21 +10,19 @@ angular.module("cesium.config", [])
 
 .constant("csConfig", {
 	"cacheTimeMs": 300000,
-	"fallbackLanguage": "en",
+	"fallbackLanguage": "fr-FR",
+	"defaultLanguage": "fr-FR",
 	"rememberMe": true,
 	"showUDHistory": true,
-	"timeout": 30000,
+	"timeout": 300000,
 	"timeWarningExpireMembership": 5184000,
 	"timeWarningExpire": 7776000,
-	"keepAuthIlde": 600,
 	"useLocalStorage": true,
-	"useRelative": false,
-	"expertMode": false,
+	"useRelative": true,
+	"expertMode": true,
 	"decimalCount": 2,
-	"httpsMode": false,
-	"shareBaseUrl": "https://g1.duniter.fr",
 	"helptip": {
-		"enable": true,
+		"enable": false,
 		"installDocUrl": {
 			"fr-FR": "https://duniter.org/fr/wiki/duniter/installer/",
 			"en": "https://duniter.org/en/wiki/duniter/install/"
@@ -35,31 +33,26 @@ angular.module("cesium.config", [])
 		"en": "license/license_g1-en"
 	},
 	"node": {
-		"host": "g1.duniter.org",
-		"port": "443"
+		"host": "g1.duniter.fr",
+		"port": 443
 	},
 	"fallbackNodes": [
 		{
-			"host": "g1.duniter.fr",
+			"host": "g1.duniter.org",
 			"port": "443"
 		},
 		{
-			"host": "g1.duniter.org",
+			"host": "g1.duniter.fr",
 			"port": "443"
-		}
-	],
-	"developers": [
-		{
-			"name": "Benoit Lavenier",
-			"pubkey": "38MEAZN68Pz1DTvT3tqgxx4yQP6snJCQhPqEFxbDk4aE"
 		}
 	],
 	"plugins": {
 		"es": {
 			"enable": true,
-			"askEnable": true,
+			"askEnable": false,
 			"host": "g1.data.duniter.fr",
-			"port": "443",
+			"port": 443,
+			"wsPort": 443,
 			"fallbackNodes": [
 				{
 					"host": "g1.data.le-sou.org",
@@ -77,10 +70,19 @@ angular.module("cesium.config", [])
 				"certReceived": true
 			},
 			"defaultCountry": "France"
+		},
+		"graph": {
+			"enable": true
+		},
+		"neo4j": {
+			"enable": true
+		},
+		"rml9": {
+			"enable": true
 		}
 	},
 	"version": "1.0.0",
-	"build": "2017-11-21T09:23:47.626Z",
+	"build": "2017-11-23T10:55:16.561Z",
 	"newIssueUrl": "https://github.com/duniter/cesium/issues/new?labels=bug"
 })
 

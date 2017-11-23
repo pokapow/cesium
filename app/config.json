@@ -294,9 +294,9 @@
       "es": {
         "enable": true,
         "askEnable": false,
-        "host": "localhost",
-        "port": 9200,
-        "wsPort": 9400,
+        "host": "g1.data.duniter.fr",
+        "port": 443,
+        "wsPort": 443,
         "fallbackNodes": [
           {
             "host": "g1.data.le-sou.org",

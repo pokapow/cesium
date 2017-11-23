@@ -113,7 +113,6 @@ function CurrencyViewController($scope, $q, $timeout, $ionicPopover, Modals, BMA
   };
   $scope.loading = true;
   $scope.screen = UIUtils.screen;
-
   $scope.enter = function(e, state) {
     if ($scope.loading) { // run only once (first enter)
 
@@ -163,6 +162,9 @@ function CurrencyViewController($scope, $q, $timeout, $ionicPopover, Modals, BMA
           data.dtReeval = json.dtReeval;
           data.udTime0 = json.udTime0;
           data.udReevalTime0 = json.udReevalTime0;
+          $scope.stepMax = 0;
+          $scope.currency = json.currency;
+          $scope.stepMax = json.stepMax;
 
           // Compat with Duniter < 1.0
           if (!data.dtReeval) {
